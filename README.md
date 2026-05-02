@@ -50,6 +50,12 @@ I work on the hard problems in fintech, manufacturing, and regulated software wh
 | [innersource-scorecard](https://github.com/brianpelow/innersource-scorecard) | Grades repos on discoverability, documentation, contribution friction, and adoption signals |
 | [service-catalog-sync](https://github.com/brianpelow/service-catalog-sync) | Automated Backstage catalog hydration: scans repos and infers ownership and tech stack |
 
+### Technology strategy
+
+| Repo | What it does |
+|------|-------------|
+| [platform-engineering-thesis](https://github.com/brianpelow/platform-engineering-thesis) | Platform First: why the AI winners in regulated industries will be built on standard engineering |
+
 ### Control plane and governance
 
 | Repo | What it does |
