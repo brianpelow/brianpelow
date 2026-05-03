@@ -55,7 +55,8 @@ I work on the hard problems in fintech, manufacturing, and regulated software wh
 | Repo | What it does |
 |------|-------------|
 | [platform-engineering-thesis](https://github.com/brianpelow/platform-engineering-thesis) | Platform First: why the AI winners in regulated industries will be built on standard engineering |
-| [engineering-operating-model](https://github.com/brianpelow/engineering-operating-model) | How I think about building and leading engineering organizations in regulated industries — talent, governance, and organizational design for the agentic era |
+| [engineering-operating-model](https://github.com/brianpelow/engineering-operating-model) | How to build and lead engineering organizations in regulated industries — talent, governance, and organizational design for the agentic era |
+| [ai-governance-framework](https://github.com/brianpelow/ai-governance-framework) | AI governance in regulated industries: the replay imperative — decision record architecture, model registry, and the four actors who will demand accountability |
 
 ### Control plane and governance
 
