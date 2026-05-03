@@ -54,13 +54,13 @@ I work on the hard problems in fintech, manufacturing, and regulated software wh
 
 | Repo | What it does |
 |------|-------------|
-| [integrated-strategy](https://github.com/brianpelow/integrated-strategy) | Entry point: how platform engineering, organizational design, and AI governance fit together — start here |
+| [integrated-strategy](https://github.com/brianpelow/integrated-strategy) | Entry point: how platform engineering, organizational design, and AI governance fit together â€” start here |
 
 | Repo | What it does |
 |------|-------------|
 | [platform-engineering-thesis](https://github.com/brianpelow/platform-engineering-thesis) | Platform First: why the AI winners in regulated industries will be built on standard engineering |
-| [engineering-operating-model](https://github.com/brianpelow/engineering-operating-model) | How to build and lead engineering organizations in regulated industries â€” talent, governance, and organizational design for the agentic era |
-| [ai-governance-framework](https://github.com/brianpelow/ai-governance-framework) | AI governance in regulated industries: the replay imperative â€” decision record architecture, model registry, and the four actors who will demand accountability |
+| [engineering-operating-model](https://github.com/brianpelow/engineering-operating-model) | How to build and lead engineering organizations in regulated industries Ã¢â‚¬â€ talent, governance, and organizational design for the agentic era |
+| [ai-governance-framework](https://github.com/brianpelow/ai-governance-framework) | AI governance in regulated industries: the replay imperative Ã¢â‚¬â€ decision record architecture, model registry, and the four actors who will demand accountability |
 
 ### Control plane and governance
 
@@ -77,6 +77,12 @@ I work on the hard problems in fintech, manufacturing, and regulated software wh
 | [platform-conductor](https://github.com/brianpelow/platform-conductor) | Meta-orchestrator: monitors all nightly agents, opens failure issues, posts weekly Discussions summaries |
 | [brianpelow.github.io](https://github.com/brianpelow/brianpelow.github.io) | Live engineering intelligence dashboard at brianpelow.github.io |
 | [portfolio-assistant](https://github.com/brianpelow/portfolio-assistant) | Claude-powered portfolio chatbot at brianpelow.github.io/portfolio-assistant |
+
+### Weekly intelligence
+
+| Repo | What it does |
+|------|-------------|
+| [weekly-platform-intelligence](https://github.com/brianpelow/weekly-platform-intelligence) | Weekly executive brief on platform engineering, agentic AI, and regulated industry technology -- published every Monday by an autonomous agent |
 
 ### Just for fun
 
