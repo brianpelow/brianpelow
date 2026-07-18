@@ -66,6 +66,7 @@ I work on the hard problems in fintech, manufacturing, and regulated software wh
 
 | Repo | What it does |
 |------|-------------|
+| [regulatory-change-impact-agent](https://github.com/brianpelow/regulatory-change-impact-agent) | Takes regulatory guidance, determines which systems it binds, and produces a sequenced remediation plan with effort estimates. Deterministic, 78 tests |
 | [code-compliance-auditor](https://github.com/brianpelow/code-compliance-auditor) | Deterministic security, governance, and debt scoring for any public GitHub repo. Nightly portfolio scorecard, CI-gateable, 69 tests |
 | [orbit-platform](https://github.com/brianpelow/orbit-platform) | Production Services Control Plane: 6-stage governance framework for container, VM, and desktop image builds |
 | [cab-automation](https://github.com/brianpelow/cab-automation) | Change Advisory Board automation: AI-generated CAB packages, risk scoring, and deployment gates |
