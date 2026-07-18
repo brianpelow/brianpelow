@@ -66,6 +66,7 @@ I work on the hard problems in fintech, manufacturing, and regulated software wh
 
 | Repo | What it does |
 |------|-------------|
+| [code-compliance-auditor](https://github.com/brianpelow/code-compliance-auditor) | Deterministic security, governance, and debt scoring for any public GitHub repo. Nightly portfolio scorecard, CI-gateable, 69 tests |
 | [orbit-platform](https://github.com/brianpelow/orbit-platform) | Production Services Control Plane: 6-stage governance framework for container, VM, and desktop image builds |
 | [cab-automation](https://github.com/brianpelow/cab-automation) | Change Advisory Board automation: AI-generated CAB packages, risk scoring, and deployment gates |
 | [fintech-platform-reference](https://github.com/brianpelow/fintech-platform-reference) | Reference architecture: ADRs, SLOs, runbooks, Backstage catalog, and PCI-DSS/SOX/FFIEC control mappings |
