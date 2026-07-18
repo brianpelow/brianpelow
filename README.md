@@ -76,13 +76,24 @@ I work on the hard problems in fintech, manufacturing, and regulated software wh
 |------|-------------|
 | [platform-conductor](https://github.com/brianpelow/platform-conductor) | Meta-orchestrator: monitors all nightly agents, opens failure issues, posts weekly Discussions summaries |
 | [brianpelow.github.io](https://github.com/brianpelow/brianpelow.github.io) | Live engineering intelligence dashboard at brianpelow.github.io |
-| [portfolio-assistant](https://github.com/brianpelow/portfolio-assistant) | Claude-powered portfolio chatbot at brianpelow.github.io/portfolio-assistant |
 
 ### Weekly intelligence
 
 | Repo | What it does |
 |------|-------------|
 | [weekly-platform-intelligence](https://github.com/brianpelow/weekly-platform-intelligence) | Weekly executive brief on platform engineering, agentic AI, and regulated industry technology -- published every Monday by an autonomous agent |
+
+### Interactive tools
+
+Live, no login required. All powered by a Cloudflare Worker proxy.
+
+| Tool | What it does |
+|------|-------------|
+| [ai-incident-war-room](https://github.com/brianpelow/ai-incident-war-room) | Five agents coordinate live through an AI governance failure and produce a complete incident response package -- brianpelow.github.io/ai-incident-war-room |
+| [cto-interview-simulator](https://github.com/brianpelow/cto-interview-simulator) | Interview me. Three personas, five phases, adaptive difficulty, and a scorecard that grades your questions -- brianpelow.github.io/cto-interview-simulator |
+| [platform-maturity-assessment](https://github.com/brianpelow/platform-maturity-assessment) | Score your platform across six domains and get prioritized recommendations with reference implementations -- brianpelow.github.io/platform-maturity-assessment |
+| [portfolio-assistant](https://github.com/brianpelow/portfolio-assistant) | Ask anything about the portfolio, the architecture decisions, or the strategy documents -- brianpelow.github.io/portfolio-assistant |
+| [ai-regulation-tracker](https://github.com/brianpelow/ai-regulation-tracker) | Nightly agent monitoring OCC, Fed, CFPB, FDIC, SEC, FCA, ECB, and EU AI Act for AI-relevant developments |
 
 ### Just for fun
 
