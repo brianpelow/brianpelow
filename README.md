@@ -22,6 +22,7 @@ I work on the hard problems in fintech, manufacturing, and regulated software wh
 
 | Repo | What it does |
 |------|-------------|
+| [mcp-governance-gateway](https://github.com/brianpelow/mcp-governance-gateway) | Governed agentic action over MCP: every write routes through a deterministic policy gate and produces a tamper-evident decision record. 45 tests |
 | [mcp-incident-intel](https://github.com/brianpelow/mcp-incident-intel) | Wires PagerDuty, Dynatrace, and runbooks into a single incident context source for LLM agents |
 | [mcp-compliance-grc](https://github.com/brianpelow/mcp-compliance-grc) | Maps SOC 2, ISO 27001, and PCI-DSS controls to code evidence and drafts compliance narratives |
 | [mcp-developer-portal](https://github.com/brianpelow/mcp-developer-portal) | Wraps Backstage: lets AI agents query the service catalog, fetch TechDocs, and scaffold services |
