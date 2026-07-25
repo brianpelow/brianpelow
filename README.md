@@ -51,7 +51,15 @@ I work on the hard problems in fintech, manufacturing, and regulated software wh
 | [innersource-scorecard](https://github.com/brianpelow/innersource-scorecard) | Grades repos on discoverability, documentation, contribution friction, and adoption signals |
 | [service-catalog-sync](https://github.com/brianpelow/service-catalog-sync) | Automated Backstage catalog hydration: scans repos and infers ownership and tech stack |
 
-### Technology strategy
+### Open source contributions
+
+Beyond building my own tools, I contribute to open-source security projects.
+
+- **[CVE Binary Tool](https://github.com/ossf/cve-bin-tool)** (OpenSSF) - documentation contribution ([#5856](https://github.com/ossf/cve-bin-tool/pull/5856)) adding a code-coverage guide to the test suite README. I set the project up locally and ran each documented command before writing it up rather than transcribing them.
+
+---
+
+## Technology strategy
 
 | Repo | What it does |
 |------|-------------|
