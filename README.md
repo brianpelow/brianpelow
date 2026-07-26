@@ -12,6 +12,7 @@ I work on the hard problems in fintech, manufacturing, and regulated software wh
 
 ### Agentic systems
 
+- **[ai-model-autopsy](https://github.com/brianpelow/ai-model-autopsy)** - Agentic governance post-mortem for AI failures. Deterministic structural analysis with a live LLM-written narrative; the analysis stands even when the free model is rate-limited or gone.
 | Repo | What it does |
 |------|-------------|
 | [IncidentPilot](https://github.com/brianpelow/IncidentPilot) | Multi-agent incident response: triage, escalation, runbook retrieval, and post-mortem drafting with LangGraph |
