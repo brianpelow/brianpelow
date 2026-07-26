@@ -12,6 +12,7 @@ I work on the hard problems in fintech, manufacturing, and regulated software wh
 
 ### Agentic systems
 
+- **[dependency-sentinel](https://github.com/brianpelow/dependency-sentinel)** - Scheduled, async enterprise dependency-triage agent. Deterministic security findings from OSV.dev (never LLM-sourced), optional migration narrative, delta reporting since last run, two schedulers, offline-capable.
 - **[ai-model-autopsy](https://github.com/brianpelow/ai-model-autopsy)** - Agentic governance post-mortem for AI failures. Deterministic structural analysis with a live LLM-written narrative; the analysis stands even when the free model is rate-limited or gone.
 | Repo | What it does |
 |------|-------------|
