@@ -73,6 +73,7 @@ Beyond building my own tools, I contribute to open-source security projects.
 
 ### Control plane and governance
 
+- **[compliance-chaos-engineer](https://github.com/brianpelow/compliance-chaos-engineer)** - Chaos engineering for governance controls. Injects governance failures into a simulated environment and scores whether the controls detect them. Reports a designed blind spot rather than a rigged 100 percent.
 | Repo | What it does |
 |------|-------------|
 | [regulatory-change-impact-agent](https://github.com/brianpelow/regulatory-change-impact-agent) | Takes regulatory guidance, determines which systems it binds, and produces a sequenced remediation plan with effort estimates. Deterministic, 78 tests |
