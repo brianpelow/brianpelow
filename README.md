@@ -33,6 +33,7 @@ I work on the hard problems in fintech, manufacturing, and regulated software wh
 
 ### Observability
 
+- **[genai-trace-conformance](https://github.com/brianpelow/genai-trace-conformance)** - Deterministic conformance validator for GenAI/agent telemetry. Checks real OTLP traces against the OpenTelemetry GenAI semantic conventions: required gen_ai.* attributes, token/cost observability, content-capture safety (flags secrets in telemetry), and agent-trace structure. Graded, CI-gateable, no LLM.
 - **[otel-pipeline-workbench](https://github.com/brianpelow/otel-pipeline-workbench)** - Deterministic lint + simulate for OpenTelemetry Collector configs. Grades correctness, security, and cost-safety (CI-gateable); simulates telemetry flow to show what a config drops, samples, and transforms before production.
 
 ### Engineering metrics
