@@ -22,6 +22,7 @@ I work on the hard problems in fintech, manufacturing, and regulated software wh
 
 ### MCP servers
 
+- **[mcp-evidence-ledger](https://github.com/brianpelow/mcp-evidence-ledger)** - MCP server providing an append-only, hash-chained evidence ledger for agent actions. Tamper-evident receipts over human-readable local state; verify pinpoints any altered record. Deterministic, no LLM.
 | Repo | What it does |
 |------|-------------|
 | [mcp-governance-gateway](https://github.com/brianpelow/mcp-governance-gateway) | Governed agentic action over MCP: every write routes through a deterministic policy gate and produces a tamper-evident decision record. 45 tests |
