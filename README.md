@@ -30,6 +30,11 @@ I work on the hard problems in fintech, manufacturing, and regulated software wh
 | [mcp-compliance-grc](https://github.com/brianpelow/mcp-compliance-grc) | Maps SOC 2, ISO 27001, and PCI-DSS controls to code evidence and drafts compliance narratives |
 | [mcp-developer-portal](https://github.com/brianpelow/mcp-developer-portal) | Wraps Backstage: lets AI agents query the service catalog, fetch TechDocs, and scaffold services |
 
+
+### Observability
+
+- **[otel-pipeline-workbench](https://github.com/brianpelow/otel-pipeline-workbench)** - Deterministic lint + simulate for OpenTelemetry Collector configs. Grades correctness, security, and cost-safety (CI-gateable); simulates telemetry flow to show what a config drops, samples, and transforms before production.
+
 ### Engineering metrics
 
 | Repo | What it does |
