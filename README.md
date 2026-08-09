@@ -6,123 +6,130 @@
 
 I work on the hard problems in fintech, manufacturing, and regulated software where engineering excellence is not optional and the blast radius of getting it wrong is real. My open-source work reflects the kind of platform and tooling investments I have led and care about: developer productivity, operational reliability, compliance automation, and the agentic future of engineering operations.
 
+**Live tools**, no login required, all powered by a Cloudflare Worker proxy:
+[CTO interview simulator](https://brianpelow.github.io/cto-interview-simulator) -
+[AI incident war room](https://brianpelow.github.io/ai-incident-war-room) -
+[Platform maturity assessment](https://brianpelow.github.io/platform-maturity-assessment) -
+[Portfolio assistant](https://brianpelow.github.io/portfolio-assistant)
+
 ---
 
 ## Portfolio
 
+Every repo below carries its grade from this portfolio's own deterministic auditor: the same repository snapshot always produces the same score, and the auditor is honest enough to have once failed itself. The catalog is generated nightly from the GitHub API rather than maintained by hand, so it cannot drift from what is actually published.
+
+<!-- CATALOG:START -->
 ### Agentic systems
 
-- **[dependency-sentinel](https://github.com/brianpelow/dependency-sentinel)** - Scheduled, async enterprise dependency-triage agent. Deterministic security findings from OSV.dev (never LLM-sourced), optional migration narrative, delta reporting since last run, two schedulers, offline-capable.
-- **[ai-model-autopsy](https://github.com/brianpelow/ai-model-autopsy)** - Agentic governance post-mortem for AI failures. Deterministic structural analysis with a live LLM-written narrative; the analysis stands even when the free model is rate-limited or gone.
-| Repo | What it does |
-|------|-------------|
-| [IncidentPilot](https://github.com/brianpelow/IncidentPilot) | Multi-agent incident response: triage, escalation, runbook retrieval, and post-mortem drafting with LangGraph |
-| [DataPipelineAgent](https://github.com/brianpelow/DataPipelineAgent) | ETL orchestrator that monitors pipelines, detects schema drift, and auto-heals data quality issues |
-| [BoardroomBrief](https://github.com/brianpelow/BoardroomBrief) | Autonomous weekly engineering brief: pulls GitHub, JIRA, and incident data into exec-ready narratives |
+| Repo | What it does | Audit |
+|------|--------------|-------|
+| [ai-incident-war-room](https://github.com/brianpelow/ai-incident-war-room) | Live multi-agent AI incident simulation for regulated industries - five agents coordinate in real time to produce a complete incident response package | B 89 |
+| [ai-model-autopsy](https://github.com/brianpelow/ai-model-autopsy) | Agentic post-mortem investigator for AI failures. | A 99 |
+| [DataPipelineAgent](https://github.com/brianpelow/DataPipelineAgent) | Agentic ETL orchestrator - monitors data sources, detects schema drift, and auto-heals pipelines | A 99 |
+| [IncidentPilot](https://github.com/brianpelow/IncidentPilot) | Multi-agent incident response orchestrator - triage, escalation, runbook generation, and post-mortems with LangGraph | A 99 |
 
 ### MCP servers
 
-- **[mcp-evidence-ledger](https://github.com/brianpelow/mcp-evidence-ledger)** - MCP server providing an append-only, hash-chained evidence ledger for agent actions. Tamper-evident receipts over human-readable local state; verify pinpoints any altered record. Deterministic, no LLM.
-| Repo | What it does |
-|------|-------------|
-| [mcp-governance-gateway](https://github.com/brianpelow/mcp-governance-gateway) | Governed agentic action over MCP: every write routes through a deterministic policy gate and produces a tamper-evident decision record. 45 tests |
-| [mcp-incident-intel](https://github.com/brianpelow/mcp-incident-intel) | Wires PagerDuty, Dynatrace, and runbooks into a single incident context source for LLM agents |
-| [mcp-compliance-grc](https://github.com/brianpelow/mcp-compliance-grc) | Maps SOC 2, ISO 27001, and PCI-DSS controls to code evidence and drafts compliance narratives |
-| [mcp-developer-portal](https://github.com/brianpelow/mcp-developer-portal) | Wraps Backstage: lets AI agents query the service catalog, fetch TechDocs, and scaffold services |
-
+| Repo | What it does | Audit |
+|------|--------------|-------|
+| [mcp-compliance-grc](https://github.com/brianpelow/mcp-compliance-grc) | MCP server for GRC workflows - maps controls to code evidence and drafts compliance narratives | A 98 |
+| [mcp-developer-portal](https://github.com/brianpelow/mcp-developer-portal) | MCP server wrapping Backstage - query service catalog, fetch TechDocs, and scaffold services via AI agents | A 98 |
+| [mcp-evidence-ledger](https://github.com/brianpelow/mcp-evidence-ledger) | MCP server providing an append-only, hash-chained evidence ledger for agent actions. | A 99 |
+| [mcp-governance-gateway](https://github.com/brianpelow/mcp-governance-gateway) | Write-path MCP server: every governance action routes through a deterministic policy engine and produces an immutable, hash-sealed decision record. | A 99 |
+| [mcp-incident-intel](https://github.com/brianpelow/mcp-incident-intel) | MCP server wiring PagerDuty, Dynatrace, and runbook context for AI-driven incident response | A 98 |
 
 ### Observability
 
-- **[genai-trace-conformance](https://github.com/brianpelow/genai-trace-conformance)** - Deterministic conformance validator for GenAI/agent telemetry. Checks real OTLP traces against the OpenTelemetry GenAI semantic conventions: required gen_ai.* attributes, token/cost observability, content-capture safety (flags secrets in telemetry), and agent-trace structure. Graded, CI-gateable, no LLM.
-- **[otel-pipeline-workbench](https://github.com/brianpelow/otel-pipeline-workbench)** - Deterministic lint + simulate for OpenTelemetry Collector configs. Grades correctness, security, and cost-safety (CI-gateable); simulates telemetry flow to show what a config drops, samples, and transforms before production.
+| Repo | What it does | Audit |
+|------|--------------|-------|
+| [genai-trace-conformance](https://github.com/brianpelow/genai-trace-conformance) | Deterministic conformance validator for GenAI/agent telemetry. | A 99 |
+| [otel-pipeline-workbench](https://github.com/brianpelow/otel-pipeline-workbench) | Deterministic workbench for OpenTelemetry Collector configs: lint them for correctness, security, and cost-safety, and simulate telemetry flow to see what a config drops, samples... | A 99 |
 
 ### Engineering metrics
 
-| Repo | What it does |
-|------|-------------|
-| [TeamHealthRadar](https://github.com/brianpelow/TeamHealthRadar) | DORA + SPACE framework scoring with AI-synthesized weekly health narratives |
-| [PlatformSLOBoard](https://github.com/brianpelow/PlatformSLOBoard) | SLO aggregation from Dynatrace and PagerDuty with error budget tracking and exec summaries |
-| [TechDebtLedger](https://github.com/brianpelow/TechDebtLedger) | Scans repos for complexity hotspots and stale dependencies, produces a prioritized payoff roadmap |
+| Repo | What it does | Audit |
+|------|--------------|-------|
+| [PlatformSLOBoard](https://github.com/brianpelow/PlatformSLOBoard) | Executive-grade platform SLO dashboard aggregating PagerDuty and Dynatrace reliability signals | A 99 |
+| [TeamHealthRadar](https://github.com/brianpelow/TeamHealthRadar) | Engineering team health scoring - DORA metrics, SPACE framework signals, and AI-synthesized insights | A 98 |
+| [TechDebtLedger](https://github.com/brianpelow/TechDebtLedger) | Automated tech debt tracker - scans repos for complexity hotspots and surfaces a prioritized payoff roadmap | A 97 |
 
-### Developer productivity CLIs
+### Developer productivity
 
-| Repo | What it does |
-|------|-------------|
-| [repoforge](https://github.com/brianpelow/repoforge) | AI-assisted repo scaffolding with 7 templates tuned for regulated industries |
-| [pr-autopilot](https://github.com/brianpelow/pr-autopilot) | Generates PR descriptions, suggests reviewers, and applies labels from your diff |
-| [runbook-gen](https://github.com/brianpelow/runbook-gen) | Auto-generates operational runbooks from code, alert definitions, and incident history |
+| Repo | What it does | Audit |
+|------|--------------|-------|
+| [pr-autopilot](https://github.com/brianpelow/pr-autopilot) | CLI that auto-generates PR descriptions, reviewers, and labels from your diff using AI | A 98 |
+| [repoforge](https://github.com/brianpelow/repoforge) | AI-assisted repo scaffolding CLI for regulated industries engineering teams | A 93 |
+| [runbook-gen](https://github.com/brianpelow/runbook-gen) | Auto-generates operational runbooks from code, alerts, and incident history using AI | A 99 |
 
-### Platform engineering patterns
+### Platform patterns
 
-| Repo | What it does |
-|------|-------------|
-| [platform-maturity-model](https://github.com/brianpelow/platform-maturity-model) | 5-level maturity framework with automated evidence collection across 6 capability domains |
-| [innersource-scorecard](https://github.com/brianpelow/innersource-scorecard) | Grades repos on discoverability, documentation, contribution friction, and adoption signals |
-| [service-catalog-sync](https://github.com/brianpelow/service-catalog-sync) | Automated Backstage catalog hydration: scans repos and infers ownership and tech stack |
+| Repo | What it does | Audit |
+|------|--------------|-------|
+| [innersource-scorecard](https://github.com/brianpelow/innersource-scorecard) | Inner-source health scorecard - grades repos on discoverability, documentation, contribution friction, and adoption | A 99 |
+| [platform-maturity-model](https://github.com/brianpelow/platform-maturity-model) | Open framework and CLI for assessing platform engineering maturity - 5-level model with automated evidence collection | A 98 |
+| [service-catalog-sync](https://github.com/brianpelow/service-catalog-sync) | Automated Backstage catalog hydration - scans repos, infers ownership and tech stack, keeps catalog fresh via CI | A 99 |
 
-### Open source contributions
+### Technology strategy
+
+| Repo | What it does | Audit |
+|------|--------------|-------|
+| [ai-governance-framework](https://github.com/brianpelow/ai-governance-framework) | AI governance in regulated industries: the replay imperative - decision record architecture, model registry, and the four actors who will demand accountability | A 93 |
+| [engineering-operating-model](https://github.com/brianpelow/engineering-operating-model) | How I think about building and leading engineering organizations in regulated industries - team design, culture, career development, and operational excellence | A 93 |
+| [integrated-strategy](https://github.com/brianpelow/integrated-strategy) | The integrated strategy: how platform engineering, organizational design, and AI governance fit together - the entry point to a four-document body of work on winning the AI era in... | B 91 |
+| [platform-engineering-thesis](https://github.com/brianpelow/platform-engineering-thesis) | A technology strategy thesis: where platform engineering and agentic AI intersect in regulated industries, 2026-2030 | A 93 |
+
+### Control plane and governance
+
+| Repo | What it does | Audit |
+|------|--------------|-------|
+| [cab-automation](https://github.com/brianpelow/cab-automation) | Change Advisory Board automation - AI-generated CAB packages, risk scoring, and deployment gates for regulated financial services | A 96 |
+| [code-compliance-auditor](https://github.com/brianpelow/code-compliance-auditor) | Deterministic multi-agent compliance auditor for GitHub repositories - security, compliance, and technical debt scoring with prioritized remediation | A 93 |
+| [compliance-chaos-engineer](https://github.com/brianpelow/compliance-chaos-engineer) | Chaos engineering for governance controls. | A 100 |
+| [fintech-platform-reference](https://github.com/brianpelow/fintech-platform-reference) | Reference architecture for a regulated fintech engineering platform - ADRs, system design, catalog definitions, and SLO specs | B 90 |
+| [orbit-platform](https://github.com/brianpelow/orbit-platform) | Production Services Control Plane - a 6-stage image build and deployment governance framework for regulated financial services | A 99 |
+| [platform-conductor](https://github.com/brianpelow/platform-conductor) | Meta-orchestrator for the brianpelow platform - coordinates agents, detects failures, and publishes weekly health summaries | A 99 |
+| [regulatory-change-impact-agent](https://github.com/brianpelow/regulatory-change-impact-agent) | Takes regulatory guidance, identifies affected systems, and produces a sequenced remediation plan - deterministic impact mapping for regulated engineering organizations | A 99 |
+
+### Autonomous intelligence
+
+| Repo | What it does | Audit |
+|------|--------------|-------|
+| [ai-regulation-tracker](https://github.com/brianpelow/ai-regulation-tracker) | Nightly agent monitoring OCC, FCA, ECB, FFIEC, CFPB, and EU AI Act feeds for AI-relevant regulatory developments - published daily to GitHub Discussions | A 96 |
+| [BoardroomBrief](https://github.com/brianpelow/BoardroomBrief) | Autonomous weekly engineering brief generator - pulls GitHub, JIRA, and incident data into exec-ready narratives | A 98 |
+| [dependency-sentinel](https://github.com/brianpelow/dependency-sentinel) | Scheduled, async enterprise dependency-triage agent. | A 99 |
+| [weekly-platform-intelligence](https://github.com/brianpelow/weekly-platform-intelligence) | Weekly executive brief on platform engineering, agentic AI, and regulated industry technology - published every Monday by an autonomous agent | A 96 |
+
+### Interactive tools
+
+| Repo | What it does | Audit |
+|------|--------------|-------|
+| [cto-interview-simulator](https://github.com/brianpelow/cto-interview-simulator) | An AI-powered CTO interview simulator - experience the interview before you sit down with the candidate | B 89 |
+| [platform-maturity-assessment](https://github.com/brianpelow/platform-maturity-assessment) | Interactive platform maturity assessment for engineering leaders - 6 domains, 20 questions, scored report with recommendations | B 89 |
+| [portfolio-assistant](https://github.com/brianpelow/portfolio-assistant) | AI-powered portfolio assistant - ask questions about the brianpelow engineering portfolio | B 89 |
+
+### Just for fun
+
+| Repo | What it does | Audit |
+|------|--------------|-------|
+| [code-roast](https://github.com/brianpelow/code-roast) | Paste any code and get it brutally but lovingly roasted by a senior engineer who has seen things | A 94 |
+| [sports-analytics-for-engineers](https://github.com/brianpelow/sports-analytics-for-engineers) | DORA metrics for sports teams - deployment frequency, change failure rate, and MTTR applied to your favorite teams | A 97 |
+| [vibe-check-cli](https://github.com/brianpelow/vibe-check-cli) | Analyzes the vibe of any GitHub repo - commit messages, PR titles, README tone - and delivers a brutally honest vibe report | A 97 |
+
+### Meta
+
+| Repo | What it does | Audit |
+|------|--------------|-------|
+| [brianpelow](https://github.com/brianpelow/brianpelow) | GitHub profile | C 76 |
+| [brianpelow.github.io](https://github.com/brianpelow/brianpelow.github.io) | Live platform engineering intelligence dashboard | B 86 |
+  <!-- CATALOG:END -->
+
+---
+
+## Open source contributions
 
 Beyond building my own tools, I contribute to open-source security projects.
 
 - **[CVE Binary Tool](https://github.com/ossf/cve-bin-tool)** (OpenSSF) - documentation contribution ([#5856](https://github.com/ossf/cve-bin-tool/pull/5856)) adding a code-coverage guide to the test suite README. I set the project up locally and ran each documented command before writing it up rather than transcribing them.
-
----
-
-## Technology strategy
-
-| Repo | What it does |
-|------|-------------|
-| [integrated-strategy](https://github.com/brianpelow/integrated-strategy) | Entry point: how platform engineering, organizational design, and AI governance fit together &mdash; start here |
-
-| Repo | What it does |
-|------|-------------|
-| [platform-engineering-thesis](https://github.com/brianpelow/platform-engineering-thesis) | Platform First: why the AI winners in regulated industries will be built on standard engineering |
-| [engineering-operating-model](https://github.com/brianpelow/engineering-operating-model) | How to build and lead engineering organizations in regulated industries &mdash; talent, governance, and organizational design for the agentic era |
-| [ai-governance-framework](https://github.com/brianpelow/ai-governance-framework) | AI governance in regulated industries: the replay imperative &mdash; decision record architecture, model registry, and the four actors who will demand accountability |
-
-### Control plane and governance
-
-- **[compliance-chaos-engineer](https://github.com/brianpelow/compliance-chaos-engineer)** - Chaos engineering for governance controls. Injects governance failures into a simulated environment and scores whether the controls detect them. Reports a designed blind spot rather than a rigged 100 percent.
-| Repo | What it does |
-|------|-------------|
-| [regulatory-change-impact-agent](https://github.com/brianpelow/regulatory-change-impact-agent) | Takes regulatory guidance, determines which systems it binds, and produces a sequenced remediation plan with effort estimates. Deterministic, 78 tests |
-| [code-compliance-auditor](https://github.com/brianpelow/code-compliance-auditor) | Deterministic security, governance, and debt scoring for any public GitHub repo. Nightly portfolio scorecard, CI-gateable, 69 tests |
-| [orbit-platform](https://github.com/brianpelow/orbit-platform) | Production Services Control Plane: 6-stage governance framework for container, VM, and desktop image builds |
-| [cab-automation](https://github.com/brianpelow/cab-automation) | Change Advisory Board automation: AI-generated CAB packages, risk scoring, and deployment gates |
-| [fintech-platform-reference](https://github.com/brianpelow/fintech-platform-reference) | Reference architecture: ADRs, SLOs, runbooks, Backstage catalog, and PCI-DSS/SOX/FFIEC control mappings |
-
-### Meta and orchestration
-
-| Repo | What it does |
-|------|-------------|
-| [platform-conductor](https://github.com/brianpelow/platform-conductor) | Meta-orchestrator: monitors all nightly agents, opens failure issues, posts weekly Discussions summaries |
-| [brianpelow.github.io](https://github.com/brianpelow/brianpelow.github.io) | Live engineering intelligence dashboard at brianpelow.github.io |
-
-### Weekly intelligence
-
-| Repo | What it does |
-|------|-------------|
-| [weekly-platform-intelligence](https://github.com/brianpelow/weekly-platform-intelligence) | Weekly executive brief on platform engineering, agentic AI, and regulated industry technology -- published every Monday by an autonomous agent |
-
-### Interactive tools
-
-Live, no login required. All powered by a Cloudflare Worker proxy.
-
-| Tool | What it does |
-|------|-------------|
-| [ai-incident-war-room](https://github.com/brianpelow/ai-incident-war-room) | Five agents coordinate live through an AI governance failure and produce a complete incident response package -- brianpelow.github.io/ai-incident-war-room |
-| [cto-interview-simulator](https://github.com/brianpelow/cto-interview-simulator) | Interview me. Three personas, five phases, adaptive difficulty, and a scorecard that grades your questions -- brianpelow.github.io/cto-interview-simulator |
-| [platform-maturity-assessment](https://github.com/brianpelow/platform-maturity-assessment) | Score your platform across six domains and get prioritized recommendations with reference implementations -- brianpelow.github.io/platform-maturity-assessment |
-| [portfolio-assistant](https://github.com/brianpelow/portfolio-assistant) | Ask anything about the portfolio, the architecture decisions, or the strategy documents -- brianpelow.github.io/portfolio-assistant |
-| [ai-regulation-tracker](https://github.com/brianpelow/ai-regulation-tracker) | Nightly agent monitoring OCC, Fed, CFPB, FDIC, SEC, FCA, ECB, and EU AI Act for AI-relevant developments |
-
-### Just for fun
-
-| Repo | What it does |
-|------|-------------|
-| [vibe-check-cli](https://github.com/brianpelow/vibe-check-cli) | Analyzes the vibe of any GitHub repo and delivers a brutally honest vibe report |
-| [code-roast](https://github.com/brianpelow/code-roast) | Paste any code and get it brutally but lovingly roasted by a senior engineer who has seen things |
-| [sports-analytics-for-engineers](https://github.com/brianpelow/sports-analytics-for-engineers) | DORA metrics for sports teams: deployment frequency, change failure rate, and MTTR for your favorite team |
 
 ---
 
@@ -131,8 +138,9 @@ Live, no login required. All powered by a Cloudflare Worker proxy.
 Every repo follows the same engineering standards I hold production systems to:
 
 - **Real working code** - not toy examples. Each tool solves a genuine problem.
-- **Test suites** - 428 passing tests across 25 repos. CI on every push.
-- **Agentic automation** - every repo has a nightly GitHub Actions agent that does real work and commits results autonomously.
+- **Measured, not asserted** - every grade in the catalog above is produced by a deterministic auditor and regenerated nightly. Where a number appears, a generator produced it.
+- **Test suites** - no network calls in tests; fakes are injected. CI on every push.
+- **Agentic automation** - scheduled GitHub Actions agents across the portfolio do real work and commit results autonomously.
 - **Regulated industry context** - fintech, manufacturing, and regulated software are first-class concerns throughout.
 - **Professional structure** - CHANGELOG, CONTRIBUTING, LICENSE, CODEOWNERS, ADR directory, and PR templates on every repo.
 
@@ -151,9 +159,9 @@ Every repo follows the same engineering standards I hold production systems to:
 **Languages**: Python, TypeScript
 **Agentic**: LangGraph, FastMCP, Anthropic Claude, OpenRouter
 **Platform**: Backstage, GitHub Actions, Kubernetes, Terraform
-**Observability**: Dynatrace, PagerDuty, Prometheus, Grafana
+**Observability**: OpenTelemetry, Dynatrace, PagerDuty, Prometheus, Grafana
 **Standards**: DORA, SPACE, SOC 2, ISO 27001, PCI-DSS
 
 ---
 
-*All repos include autonomous nightly agents that commit real work. The activity graph is genuine.*
+*Scheduled agents across these repos commit real work on a nightly and weekly cadence. The activity graph is genuine.*
